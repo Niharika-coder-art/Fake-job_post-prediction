@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fake Job Detection</title>
+<style>
+body{font-family:Arial;background:#eef;text-align:center;margin-top:80px}
+textarea{width:500px;height:140px}
+button{padding:10px 20px;margin-top:10px}
+.result{font-size:22px;margin-top:20px;font-weight:bold}
+</style>
+</head>
+<body>
+
+<h2>Fake Job Post Detection using Machine Learning</h2>
+
+<form method="post">
+<textarea name="jobtext" placeholder="Enter job description"></textarea><br>
+<button type="submit">Predict</button>
+</form>
+
+{% if result %}
+<div class="result">Prediction: {{result}}</div>
+{% endif %}
+
+</body>
+</html>
